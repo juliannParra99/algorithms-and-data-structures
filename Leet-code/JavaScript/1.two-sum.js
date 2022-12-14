@@ -1,4 +1,6 @@
 
+//LeetCode
+
 // Dada una matriz de números enteros nums y un número entero target, devuelva los índices de los dos números de modo que sumentarget .
 
 // Puede suponer que cada entrada tendría exactamente una solución y no puede usar el mismo elemento dos veces.
@@ -28,4 +30,17 @@
 // -109 <= nums[i] <= 109
 // -109 <= target <= 109
 // Sólo existe una respuesta válida.
- 
+
+
+let twoSum = function(nums, target) {
+    let matchMap = {};
+    for(let i = 0; i < nums.length; i++){
+     let compliment = target - nums[i];
+        if(compliment in matchMap){
+            return [i, matchMap[compliment]]
+        }
+        matchMap[nums[i]] = i;
+    }
+};
+
+console.log(twoSum([2,7,11,15],9));

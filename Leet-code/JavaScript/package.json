@@ -1,0 +1,13 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "main": "1.two-sum.js",
+  "devDependencies": {},
+  "scripts": {
+    "dev": "nodemon 1.two-sum.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
